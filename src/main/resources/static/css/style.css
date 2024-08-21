@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía Roboto */
+.roboto-thin { font-family: "Roboto", sans-serif; font-weight: 100; font-style: normal; }
+.roboto-thin-italic { font-family: "Roboto", sans-serif; font-weight: 100; font-style: italic; }
+.roboto-light { font-family: "Roboto", sans-serif; font-weight: 300; font-style: normal; }
+.roboto-regular { font-family: "Roboto", sans-serif; font-weight: 400; font-style: normal; }
+.roboto-regular-italic { font-family: "Roboto", sans-serif; font-weight: 400; font-style: italic; }
+.roboto-medium { font-family: "Roboto", sans-serif; font-weight: 500; font-style: normal; }
+.roboto-bold { font-family: "Roboto", sans-serif; font-weight: 700; font-style: normal; }
+.roboto-black { font-family: "Roboto", sans-serif; font-weight: 900; font-style: normal; }
+
+.bg-dark2 {
+    background-image: url('https://i.ibb.co/L0rppnK/webb.png');
+    background-attachment: fixed;
+}
+
+.bg-dark {
+    background-image: url('https://i.ibb.co/qrN8Wq0/webb-dark.png');
+    background-attachment: fixed;
+}
+
+.bg-dark3 {
+    background-image: url('https://i.ibb.co/jkX0HwG/email-pattern.webp');
+    background-attachment: fixed;
+}
+
+
+/*https://i.ibb.co/nDXC6DX/old-elegance-dark.jpg*/
+/*https://i.ibb.co/jkX0HwG/email-pattern.webp*/
+
+/* Paletas de colores */
+.gris-100 { background: #f8f9fa; }
+.gris-200 { background: #e9ecef; }
+.gris-300 { background: #dee2e6; }
+.gris-400 { background: #ced4da; }
+.gris-500 { background: #adb5bd; }
+.gris-600 { background: #6c757d; }
+.gris-700 { background: #495057; }
+.gris-800 { background: #343a40; }
+.gris-900 { background: #212529; }
+.gris-1000 { background: #282e31; }
+
+.transparent {
+    background-color: transparent !important;
+    backdrop-filter: blur(0.8px); /* Añade un efecto de desenfoque al fondo (opcional) */
+}
+
+.btn-primary.translucent {
+    background-color: rgba(0, 123, 255, 0.8) !important; /* Color original con transparencia */
+}
+
+.btn-secondary.translucent {
+    background-color: rgba(108, 117, 125, 0.8) !important; /* Color original con transparencia */
+}
+
+.btn-success.translucent {
+    background-color: rgba(40, 167, 69, 0.8) !important; /* Color original con transparencia */
+}
+
+.bdradius {
+    border-radius: 20px;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(8%, -10%);
+    width: 80%;
+    max-width: 1140px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+    z-index: 10; /* Asegura que el contenido esté por encima de las imágenes */
+}
+
+@media (max-width: 1400px) {
+    .content {
+        font-size: 0.8em; /* Cambia el tamaño de la fuente según sea necesario */
+    }
+}
+
+@media (max-width: 1150px) {
+    .content {
+        font-size: 0.5em; /* Cambia el tamaño de la fuente según sea necesario */
+    }
+}
+
+@media (max-width: 550px) {
+    .content {
+        font-size: 0.2em; /* Cambia el tamaño de la fuente según sea necesario */
+    }
+}
+
+.carousel_author {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(1, 2, 2, 0.5);
+}
+
+.carousel_title,
+.carousel_topic {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.carousel_topic {
+    color: #f1683a;
+}
+
+.carousel_parrafo {
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.1); /* Cambia el valor de 0.1 según lo necesites */
+    border-radius: 5px;
+    color: #eee;
+}
+
+.carousel_buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.carousel_a {
+    border: none;
+    background-color: #212529;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center; /* Alinea el texto en el centro */
+    line-height: 40px; /* Establece la altura de línea igual a la altura del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: black;
+}
+
+.carousel_a:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.carousel_a:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #eee;
+}
+
+.carousel_a:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Cambia el color de fondo al pasar el mouse */
+}
+
+.carousel_texto {
+    color: #ced4da; /* Cambiar el color del texto */
+    font-size: 1em; /* Ajustar el tamaño del texto según sea necesario */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel_item {
+    position: relative;
+}
+
+.carousel_item img {
+    opacity: 0;
+    transition: opacity 6s, transform 6.5s;
+}
+
+.carousel_item.active img {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.animation-delay-0 {
+    animation: fadeIn 4s ease forwards;
+    animation-delay: 0.5s; /* Retraso de 0.5 segundos */
+}
+
+.animation-delay-1 {
+    animation: fadeIn 4s ease forwards;
+    animation-delay: 1s; /* Retraso de 1 segundo */
+}
+
+.animation-delay-2 {
+    animation: fadeIn 4s ease forwards;
+    animation-delay: 1.5s; /* Retraso de 1.5 segundos */
+}
+
+.animation-delay-3 {
+    animation: fadeIn 4s ease forwards;
+    animation-delay: 2s; /* Retraso de 2 segundos */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
